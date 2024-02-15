@@ -18,22 +18,26 @@ namespace AntAlgorithm
             string aliveAnts = "..ant..ant.ant...ant.ant..ant.ant....ant..ant.ant.ant...ant..";
             string deadAnts = "...ant...ant..nat.ant.t..ant...ant..ant..ant.anant..t";
 
-            for (int j = 0; j < aliveAnts.Length; j++)
+            for (int j = 0; j < deadAnts.Length; j++)
             {
-                if (aliveAnts[j] == '.') continue;
-                if (j+2 < aliveAnts.Length && VerifiyLivingAnt(aliveAnts[j], aliveAnts[j+1], aliveAnts[j + 2]))
+                if (deadAnts[j] == '.') continue;
+                if (j+2 < deadAnts.Length && VerifiyLivingAnt(deadAnts[j], deadAnts[j+1], deadAnts[j + 2]))
                 {
                     j += 2;
                     continue;
                 }
 
-                switch(aliveAnts[j])
+                switch(deadAnts[j])
                 {
                     case 'a':
+                        VerifyHead();   
                         break;
+
                     case 'n':
+                        VerifyBody();
                         break;
                     case 't':
+                        VerifyTail();
                         break;
                 }
 
@@ -45,8 +49,15 @@ namespace AntAlgorithm
                     tail = false;
                 }
             }
+            LastParts();
+            Console.WriteLine($"En este string: {deadAnts} hay {antCounter} Hormigas muertas");
+            Console.ReadKey();
 
+        }
 
+        public static void LastParts()
+        {
+            if (head || body || tail) antCounter++;
         }
 
         public static bool VerifiyLivingAnt(char head, char body ,char tail)
@@ -54,6 +65,47 @@ namespace AntAlgorithm
             if(head =='a' &&  body == 'n'&& tail == 't') return true;
             return false;
         }
-       
+
+        public static void VerifyBody()
+        {
+            if (body)
+            {
+                antCounter++;
+            }
+            else
+            {
+                body = true;
+            }
+
+            
+        }
+
+        public static void VerifyHead()
+        {
+            if (head)
+            {
+                antCounter++;
+            }
+            else
+            {
+                head= true; 
+            }
+
+        }
+
+        public static void VerifyTail()
+        {
+            if (tail)
+            {
+                antCounter++;
+            }
+            else
+            {
+                tail = true;    
+            }
+            
+
+        }
+
     }
 }
