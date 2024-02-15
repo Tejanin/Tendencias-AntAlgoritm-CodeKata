@@ -1,0 +1,7 @@
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\bin\Debug\AntAlgorithm.exe.config
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\bin\Debug\AntAlgorithm.exe
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\bin\Debug\AntAlgorithm.pdb
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\obj\Debug\AntAlgorithm.csproj.AssemblyReference.cache
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\obj\Debug\AntAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\obj\Debug\AntAlgorithm.exe
+C:\Users\mario\Desktop\INTEC\Trimestre 11\Tendencias de Software\Lab\AntAlgorithm\AntAlgorithm\obj\Debug\AntAlgorithm.pdb
